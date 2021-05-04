@@ -24,11 +24,9 @@ import java.util.stream.Collectors;
  */
 
 public class StripComments {
-
     public static String stripComments(String text, String[] commentSymbols) {
         boolean markedFound = false;
         ArrayList<String> arrayList = new ArrayList<>();
-        String[] stripped;
         String[] letters = text.split("");
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < letters.length; i++) {
